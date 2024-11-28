@@ -64,7 +64,7 @@ export const SinglePage = ({ clickedFilm }) => {
           <p dangerouslySetInnerHTML={{ __html: clickedFilm?.summary }}></p>
         </div>
 
-        <h2 className="cast-h2">Cast </h2>
+        <h2 className="cast-h2">Cast</h2>
         <div className="info-cast">
           {cast
             ? cast.map((el) => {
