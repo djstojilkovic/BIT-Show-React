@@ -1,38 +1,186 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Simbiot;
+}
+@font-face {
+  font-family: "Simbiot";
+  src: url("./Fonts/Simbiot.ttf");
+}
+@counter-style film {
+  system: fixed;
+  symbols: 🎬;
+  suffix: " ";
+}
+body {
+  background-color: rgb(182, 179, 179);
+  background-image: url("https://minibackground.com/wp-content/uploads/2019/01/Galatro-grain.jpg");
+}
+h1 {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 30px;
+  font-size: 40px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.head {
+  background-color: rgb(54, 53, 53);
+  color: white;
+  font-size: 25px;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.head > input {
+  position: relative;
+  left: 40px;
+}
+.head > h4 {
+  position: relative;
+  right: 43px;
+  cursor: pointer;
+}
+.head > h4:hover {
+  color: rgb(69, 156, 156);
+}
+.search {
+  padding: 10px;
+  padding-left: 5px;
+}
+.result {
+  height: 0px;
+  background-color: azure;
+  width: 222px;
+  position: absolute;
+}
+.res-div {
+  background-color: whitesmoke;
+  font-size: 18px;
+  color: black;
+  border-bottom: 1px solid black;
+  font-family: "Times New Roman", Times, serif;
+  border-radius: 8px;
+  padding: 3px;
+}
+.res-div:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
+.shows {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  justify-self: center;
+  align-content: center;
+  width: 55%;
+  margin: 50px;
+  background-color: rgb(120, 124, 124);
+  border-radius: 10px;
+  box-shadow: 90px -20px rgb(69, 156, 156);
+}
+.shows > div {
+  width: 30%;
+  margin: 15px;
+  border-radius: 10px;
+}
+.shows > div > img {
+  width: 100%;
+  /* padding: 15px; */
+  border-radius: 10px;
+}
+.shows > div > img:hover {
+  cursor: pointer;
+  box-shadow: 15px 15px 15px rgb(230, 230, 230);
+}
+.shows > div > p {
+  padding: 10px;
+  font-size: 14px;
+  color: whitesmoke;
+  font-family: Simbiot;
+}
+.info-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 55%;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 30px;
+  color: white;
+  background-color: rgb(120, 124, 124);
+  border-radius: 10px;
+  box-shadow: 90px -20px rgb(69, 156, 156);
+}
+.name {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 30px;
+}
+.img {
+  width: 85%;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.info-right {
+  margin-top: 125px;
+}
+.info-right > h2 {
+  font-family: Simbiot;
+}
+.info-right > p {
+  padding: 5px;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.seasons ul {
+  list-style-type: film;
+  margin: 0;
+  padding: 0;
+}
+.seasons li,
+p {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1px;
+  padding-left: 5px;
+}
+.info-left {
+  width: 400px;
+}
+.info-summary {
+  font-size: 20px;
+  padding-top: 40px;
+}
+.info-summary > p {
+  padding-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.cast-h2 {
+  margin-top: 20px;
+}
+.info-cast {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  font-size: 16px;
+  border-radius: 10px;
+  margin-top: 20px;
+  background-color: rgb(44, 104, 104);
+}
+.info-cast span {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.info-cast img {
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.info-cast p {
+  padding-bottom: 10px;
+}
+.footer {
+  background-color: rgb(54, 53, 53);
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: 30px;
 }
